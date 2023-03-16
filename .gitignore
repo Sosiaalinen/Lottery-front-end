@@ -30,3 +30,11 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+package.json
+
+README.node_modules
+yarn.lock
+
+.prettierrc
+.prettierignore
