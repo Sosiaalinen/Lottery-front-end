@@ -1,12 +1,12 @@
 import { useWeb3Contract } from "react-moralis"
-import { abi, contractAddresses } from "../constants"
+import { abi, coads } from "../constants"
 import { useMoralis } from "react-moralis"
 import { useEffect } from "react"
 
 export default function LotteryEntrance() {
     const { chainId: chainIdHex, isWeb3Enabled } = useMoralis()
     const chainId = parseInt(chainIdHex)
-    const lotteryAddress = chainId in contractAddresses ? contractAddresses[chainId][0] : null
+    const lotteryAddress = chainId in coads ? contractAddresses[chainId][0] : null
 
     let entranceFee = ""
 
